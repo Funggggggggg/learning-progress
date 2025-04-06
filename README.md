@@ -17,13 +17,13 @@ Conceptual learning - study notes, thought process, error records.
 | **函式與作用域**           | 3 | - 函式宣告 vs. 表達式<br>- Hoisting 與閉包<br>- `this` 與箭頭函式          | - `this` 指向混淆<br>- 函式與變數提升                                | - 自訂邏輯模組<br>- 時間格式化<br>工具       |
 | **資料處理與<br>計時器**    |4 | - 陣列<br>與文字資料轉換處理<br>- `setTimeout`, `setInterval`                  | - 資料轉換技巧<br>- 非同步流程控制                                   | - 文字轉換器<br>- 倒數計時器             |
 | **DOM 基礎操作**           | 5 | - `querySelector`, `innerText`<br>- `classList`, `innerHTML` 操作          | - DOM tree 結構理解困難<br>- 選取器與操作同步                    | - 表單驗證<br>- 動態新增<br>項目             |
-| **事件處理與<br>表單交互**  |6 | -`addEventListener` <br>- input、submit 事件                               | - 事件冒泡與捕獲<br>- `preventDefault()`  `stopPropagation()` 差異 | - BMI 計算工具<br>- 自訂輸入欄<br>驗證       |
-| **jQuery 操作與小遊戲**    | 7| - jQuery DOM 操作與動畫<br>- 鏈式操作                                      | - 原生 DOM vs jQuery 差異<br>- 動畫與邏輯同步問題                    | - 翻牌遊戲<br>- 打殭屍遊戲               |
-| **ES6 語法糖與模組化**     | 8 | - 解構、展開運算子<br>- 模板字串、箭頭函式、模組拆分                       | - `this` 在箭頭函式中的行為<br>- 命名衝突與結構劃分                  | - 資料重組小工具<br>- 筆記工具           |
-| **AJAX / Fetch / 非同步**  | 9 | - Fetch API、Promise、async/await                                          | - 非同步流程不易掌握                                                 | - 天氣查詢 API<br>- API 資料顯示頁面     |
-| **Node.js 入門<br>與模組系統** |10 | - `require` / `import`<br>- 檔案結構與模組化                          | - Node.js 與瀏覽器端差異<br>- 模組相依處理                           | - 模組整合小程式  |
-| **Vue.js 基礎與進階**      | 11 | - Vite、Component、指令（v-bind, v-model）<br>- Vue Router、Pinia 狀態管理 | - 資料流動與響應式<br> - 與傳統 JS 操作差異                       | - 前後端整合表單專案<br>- Vue 記帳工具 |
-| **MongoDB 與資料整合**     | 12 | - MongoDB 安裝與操作<br>- API 資料讀寫與整合                               | - 資料模型設計與錯誤處理                                             | - 完整小型全端專案（記帳、社群、留言板等） |
+| **事件處理與<br>表單交互**  |5 | -`addEventListener` <br>- input、submit 事件                               | - 事件冒泡與捕獲<br>- `preventDefault()`  `stopPropagation()` 差異 | - BMI 計算工具<br>- 自訂輸入欄<br>驗證       |
+| **jQuery 操作與小遊戲**    | 6| - jQuery DOM 操作與動畫<br>- 鏈式操作                                      | - 原生 DOM vs jQuery 差異<br>- 動畫與邏輯同步問題                    | - 翻牌遊戲<br>- 打殭屍遊戲               |
+| **ES6 語法糖與模組化**     | 7 | - 解構、展開運算子<br>- 模板字串、箭頭函式、模組拆分                       | - `this` 在箭頭函式中的行為<br>- 命名衝突與結構劃分                  | - 資料重組小工具<br>- 筆記工具           |
+| **AJAX / Fetch / 非同步**  | 8 | - Fetch API、Promise、async/await                                          | - 非同步流程不易掌握                                                 | - 天氣查詢 API<br>- API 資料顯示頁面     |
+| **Node.js 入門<br>與模組系統** | 9 | - `require` / `import`<br>- 檔案結構與模組化                          | - Node.js 與瀏覽器端差異<br>- 模組相依處理                           | - 模組整合小程式  |
+| **Vue.js 基礎與進階**      | 10 | - Vite、Component、指令（v-bind, v-model）<br>- Vue Router、Pinia 狀態管理 | - 資料流動與響應式<br> - 與傳統 JS 操作差異                       | - 前後端整合表單專案<br>- Vue 記帳工具 |
+| **MongoDB 與資料整合**     | 11 12 | - MongoDB 安裝與操作<br>- API 資料讀寫與整合                               | - 資料模型設計與錯誤處理                                             | - 完整小型全端專案（記帳、社群、留言板等） |
 
 ---
 

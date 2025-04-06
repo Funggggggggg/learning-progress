@@ -12,12 +12,12 @@ Conceptual learning - study notes, thought process, error records.
 | 主題  | 週 | 學習重點 | 可能困難點／觀念釐清   | 實作練習建議  |
 | -------------------------- | -------- | -------------------------------------------------------------------------- | -------------------------------------------------------------------- | ---------------------------------------- |
 | **JavaScript 基礎語法**    |1 | - `var`, `let`, `const`<br> - 資料型別與運算子                              | - 型別轉換與自動轉型<br>- 作用域 (Scope) 觀念                  | - 計算器<br>- 型別轉換小工具             |
-| **條件與迴圈**             | 1| - `if/else`, `switch`<br>- `for`, `while`, `break`, `continue`             | - 巢狀結構與邏輯判斷混淆                                             | - 猜數字遊戲<br>- 密碼驗證<br>邏輯           |
+| **條件與迴圈**             | 1| - `if/else`, `switch`<br>- `for`, `while`, `break`, `continue`             | - 巢狀結構與邏輯判斷混淆                                             | - 猜數字遊戲<br>- 密碼驗證邏輯           |
 | **陣列與物件**             | 2 | - 陣列方法：`map`, `filter`, `forEach`<br>- 物件基本操作                   | - 陣列與物件的複製（深/淺拷貝）<br>- `this` 理解初步                 | - Todo List 資料結構                     |
-| **函式與作用域**           | 3 | - 函式宣告 vs. 表達式<br>- Hoisting 與閉包<br>- `this` 與箭頭函式          | - `this` 指向混淆<br>- 函式與變數提升                                | - 自訂邏輯模組<br>- 時間格式化<br>工具       |
+| **函式與作用域**           | 3 | - 函式宣告 vs. 表達式<br>- Hoisting 與閉包<br>- `this` 與箭頭函式          | - `this` 指向混淆<br>- 函式與變數提升                                | - 自訂邏輯模組<br>- 時間格式化工具       |
 | **資料處理與<br>計時器**    |4 | - 陣列<br>與文字資料轉換處理<br>- `setTimeout`, `setInterval`                  | - 資料轉換技巧<br>- 非同步流程控制                                   | - 文字轉換器<br>- 倒數計時器             |
-| **DOM 基礎操作**           | 5 | - `querySelector`, `innerText`<br>- `classList`, `innerHTML` 操作          | - DOM tree 結構理解困難<br>- 選取器與操作同步                    | - 表單驗證<br>- 動態新增<br>項目             |
-| **事件處理與<br>表單交互**  |5 | -`addEventListener` <br>- input、submit 事件                               | - 事件冒泡與捕獲<br>- `preventDefault()`  `stopPropagation()` 差異 | - BMI 計算工具<br>- 自訂輸入欄<br>驗證       |
+| **DOM 基礎操作**           | 5 | - `querySelector`, `innerText`<br>- `classList`, `innerHTML` 操作          | - DOM tree 結構理解困難<br>- 選取器與操作同步                    | - 表單驗證<br>- 動態新增項目             |
+| **事件處理與<br>表單交互**  |5 | -`addEventListener` <br>- input、submit 事件                               | - 事件冒泡與捕獲<br>- `preventDefault()`  `stopPropagation()` 差異 | - BMI 計算工具<br>- 自訂輸入欄驗證       |
 | **jQuery 操作與小遊戲**    | 6| - jQuery DOM 操作與動畫<br>- 鏈式操作                                      | - 原生 DOM vs jQuery 差異<br>- 動畫與邏輯同步問題                    | - 翻牌遊戲<br>- 打殭屍遊戲               |
 | **ES6 語法糖與模組化**     | 7 | - 解構、展開運算子<br>- 模板字串、箭頭函式、模組拆分                       | - `this` 在箭頭函式中的行為<br>- 命名衝突與結構劃分                  | - 資料重組小工具<br>- 筆記工具           |
 | **AJAX / Fetch / 非同步**  | 8 | - Fetch API、Promise、async/await                                          | - 非同步流程不易掌握                                                 | - 天氣查詢 API<br>- API 資料顯示頁面     |

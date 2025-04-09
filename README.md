@@ -8,7 +8,7 @@ Conceptual learning - study notes, thought process, error records.
 
 在已具備基本 HTML/CSS 語法情況下增進基礎，<br>
 目前已知自己較不熟 flexbox、 bootstrapt 、RWD、css 動畫、 gsap 以及套件的使用，<br>
-故依照專案進度做任務主軸，並安排對應的 CSS 技術補強重點，希望能更有效率地完成專案重構並補足 css 基礎。<br>
+故依照專案進度做任務主軸，並安排對應的 CSS 技術補強重點，希望能更有效率地完成專案重構並補足基礎。<br>
 
 ---
 

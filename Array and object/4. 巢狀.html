@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>巢狀</title>
+    <!--物件 => 一個東西的不同資料 -->
+    <!--陣列 => 相似資料的集合 -->
+</head>
+
+<body>
+    <script>
+
+        // 例一 --------------------------------------------------------------------------------
+        const vtubers = [
+            { name: 'aqua', sub: 228 },
+            { name: 'himehine', sub: 95.1 },
+            { name: 'kaf', sub: 100 },
+        ]
+        console.log(vtubers)
+        console.table(vtubers) // 印成表格
+
+        // 迴圈取值
+        document.write('<ul>')
+        for (let i = 0; i < vtubers.lenth; i++) {
+            document.write(`<li> 第 ${i + 1} 個 VTuber 是 ${vtuber[i].name}，訂閱數 ${vtuber[i].sub} 萬 </li>`)
+        }
+        document.write('</ul>')
+
+        // 例二 ----------------------------------------------------------------------------------
+        const store = {
+            name: 'PCHome',
+            url: 'https://24h.pchome.com.tw',
+            products: [
+                { name: 'iPhone 16 Pro Max (1TB)', price: 58900 },
+                { name: 'NOTHING phone 2 12/256', price: 18990 }
+            ]
+        }
+        document.write('<table border="1">')
+        document.write('<caption>') // 標題
+        document.write(`<a href="${store.url}">$${store.name}</a>`)
+        document.write('</caption>')
+        for (let i = 0; i < store.products.length; i++) {
+            document.write('<tr>')
+            document.write(`<td>${store.products[i].name}</td>`)
+            document.write(`<td>${store.products[i].price}</td>`)
+            document.write('</tr>')
+        }
+        document.write('</table>')
+
+        // 練習 --------------------------------------------------------------------------------
+        const exhibitions = {
+            exhibition: '臺北市立美術館',
+            current: [
+                {name: '2025 X-site: 毛孔城市－佔領計畫',date: '2025/05/03 - 2025/07/13',location:'北美館戶外廣場' },
+                {name: '開放式結局：TFAM放映計畫',date: '2025/04/02 - 2025/06/22', location:'地下樓F展覽室' },
+                {name: '麗麗食品',date: '2025/03/29 - 2025/06/22', location:'地下樓E展覽室' },
+            ],
+            url: 'https://www.tfam.museum/Exhibition/Exhibition.aspx?ddlLang=zh-tw',
+            location: '104227臺北市中山區中山北路三段181號',
+        }
+
+        document.write('<table border="1">')
+        document.write('<caption>')
+        document.write(`<a href="${exhibitions.url}"> ${exhibitions.exhibition} 展覽 </a>`)
+        document.write('</caption>')
+        for (let i = 0; i < exhibitions.current.length; i++) {
+            document.write('<tr>')
+            document.write(`<td>${exhibitions.current[i].name}</td>`)
+            document.write(`<td>${exhibitions.current[i].date}</td>`)
+            document.write(`<td>${exhibitions.current[i].location}</td>`)
+            document.write('</tr>')
+        }
+        document.write('</table>')
+    </script>
+</body>
+
+</html>

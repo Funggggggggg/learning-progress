@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>陣列 array</title>
+</head>
+
+<body>
+    <script>
+        // 陣列 array 像火車
+        // 車廂是索引 index (只有數字型態，從 0 開始)，乘客是值 value
+        const alphabets = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
+
+        document.write(`有 ${alphabets.length} 個字母<br>`) // 取長度
+        document.write(`索引 0 是 ${alphabets[0]} <br>`) // a
+        document.write(`索引 1000 是 ${alphabets[1000]} <br>`) // 放不存在的索引 會得到 undefined
+
+        // 陣列迴圈 變數 i 取值
+        for (let i = 0; i < alphabets.length; i++) {
+            document.write(`索引 ${i} 是 ${alphabets[i]} <br>`)
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>迴圈</title>
+</head>
+
+<body>
+    <script>
+        // for (變數 of 陣列)
+        // 迴圈陣列每個 '值'
+        const apples = [1, 2, 3, 4]
+        for (const apple of apples) {
+            document.write(apple + '<br>')
+        }
+
+        // for ( 索引 in 陣列 )
+        // 迴圈陣列每個 '索引'
+        // i 的資料型態會是 '文字'
+        document.write('<hr>')
+        for (const i in apples) {
+            //console.log(i, typeof i)
+            document.write(`i ${i}: ${apples[i]}<br>`)
+        }
+
+        document.write('<hr>')
+
+        // 物件只能用 for in
+        const obj = { a: 1, b: 2, c: 3 }
+        for (const key in obj) {
+            document.write(`key: ${key};${obj[key]}<br>`)
+        }
+    </script>
+</body>
+
+</html>

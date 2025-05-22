@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>解構賦值</title>
+    <!-- Destructuring Assignment -->
+</head>
+
+<body>
+    <script>
+        // 陣列 array 的解構
+        const numbers = [1, 2, 3, 4]
+        //  let one = numbers[0]
+        //  let two = numbrts[1]
+        //  let otherNumbers = [number[2],number[3]]
+        // ... 剩餘的意思 (一定要放在陣列最後面)
+        let [one, two, ...otherNumbers] = numbers
+        console.log(one)
+        console.log(two)
+        console.log(otherNumbers)
+        
+        // 物件 object 的解構 --------------------------------------------------------------------------------------
+        const obj = { a: 1, b: 2, c: 3, d: 4 }
+        //let a = obj.a
+        //let bb = obj.b
+        //let otherObj = {
+        //  c:obj.c
+        //  d:obj.d
+        //}
+
+        let b = 321315465465465456 // 若外層已經有一個 b 那就必須要冒號重新命名 ( b: bb )
+        let { a, b: bb, ...otherObj } = obj
+        console.log(a)
+        console.log(bb)
+        console.log(otherObj)
+
+        // 物件解構 的變數名稱 需和原來的 key 一樣
+        // 若已經存在變數名稱 b 了，則必須以 : 重新命名
+    </script>
+</body>
+
+</html>

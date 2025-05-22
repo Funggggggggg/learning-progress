@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 可選 ?. </title>
+    <!-- 資料缺漏時使用 -->
+</head>
+
+<body>
+    <script>
+        const userA = {
+            name: 'AAA',
+            info: {
+                email: 'aaa@gmail.com',
+                //address: {
+                //    city:'',
+                //    postcode:''
+                //}
+            }
+        }
+
+        const userB = {
+            name: 'BBB',
+            info: {
+                email: 'bbb@gmail.com',
+                address: {
+                    city: '新北市',
+                    postcode: 243
+                }
+            }
+        }
+
+        console.log(userB.name)
+        console.log(userB.info.address?.city)      //?.從不確定的選項開始，可避免輸入者沒輸入而出錯
+        console.log(userB.info.address?.postcode)
+
+        console.log(userA.name)                    // AAA
+        console.log(userA.info.email)              // aaa@gmail.com
+        console.log(userA.info.address)            // undefined
+        console.log(userA.info.address?.city)      // 加了 ?. => undefined => 還是可以繼續
+        console.log(userA.info.email)              // aaa@gmail.com
+        // console.log(userA.info.address.city)       
+        // 出錯不再繼續往下寫 => Uncaught TypeError: Cannot read properties of undefined (reading 'city')
+        console.log(userA.info.email)              // 上面出錯不繼續
+
+        // ----------------------------------------------------------------------------------------------
+        const games = [
+            { name: 'FINAL FANTASY XVI', price: 1490 },
+            {
+                name: 'FF7', price: 995,
+                dev: {
+                    name: 'SE'
+                }
+            },
+            {
+                name: 'KINGDOM HEARTS', price: 2990,
+                dev: {
+                    name: 'SE'
+                }
+            }
+        ]
+        for (let i = 0; i < games.length; i++) {
+            document.write(`
+                <p>
+                    ${games[i].name}，價格: ${games[i].price}，
+                    開發商為 <b> ${games[i].dev?.name || '不明 (這樣寫比 undefined 好看)'} </b> 
+                </p>
+            `)
+        }
+    </script>
+
+</body>
+
+</html>

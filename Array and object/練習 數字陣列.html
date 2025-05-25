@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>練習 數字陣列</title>
+    <!-- 
+        用 prompt() 獲取使用者輸入，並將這些輸入存儲在一個陣列中。
+        1. 印出陣列 第 x 個數字為 y
+        2. 有幾個奇數和幾個偶數
+        3. 最大數字和最小數字 
+    -->
+</head>
+<body>
+    <script>
+        const numbers = [
+            parseInt(prompt('第一個數字')),
+            parseInt(prompt('第二個數字')),
+            parseInt(prompt('第三個數字')),
+            parseInt(prompt('第四個數字')),
+            parseInt(prompt('第五個數字')),
+        ]
+        document.write(`這個陣列的數字是：${numbers}<br>`)
+        document.write(`總共有${ numbers.length }個數字<br>`)
+        console.log(typeof numbers[0])
+
+        // -------------------------------------------------------------------
+        let oddNumber = 0 
+        let evenNumber = 0
+        
+        for ( const number of numbers) {
+            if (number % 2 !== 0) {
+                oddNumber++
+                // document.write(`${ number } 是奇數<br>`)
+            } else {
+                evenNumber++
+                // document.write(`${ number } 是偶數<br>`)
+            }
+        }
+        document.write(`有${ oddNumber } 個奇數，${ evenNumber }個偶數<br>`)
+        
+        // -------------------------------------------------------------------
+        let big = numbers[0]
+        for ( let i = 0; i < numbers.length; i++) {
+            if ( numbers[i] > big)
+            big = numbers[i];
+        }
+        document.write(`最大數字是${ big }<br>`)
+
+        let small = numbers[0]
+        for ( let i = numbers.length; i >= 0; i--) {
+            if ( numbers[i] < small)
+            small = numbers[i];
+        }
+        document.write(`最小數字是${ small }<br>`)
+    </script>
+</body>
+</html>

@@ -9,8 +9,9 @@
 
 <body>
     <script>
-        // for (變數 of 陣列)
+        // for ( 變數 of 陣列 )
         // 迴圈陣列每個 '值'
+        // 資料型態會是 '文字'
         const apples = [1, 2, 3, 4]
         for (const apple of apples) {
             document.write(apple + '<br>')
@@ -32,6 +33,23 @@
         for (const key in obj) {
             document.write(`key: ${key};${obj[key]}<br>`)
         }
+
+        // ----------------------------------------------------------------
+        const number = [1, 2, 3, 4]
+        for (let number of numbers) {
+            number *= 1000
+            // 每次 *1000 都是新的東西，因此不會改到原本的 number
+        }
+        console.log(number)
+
+        for (let i in numbers) {
+            number[i] *= 1000
+            // 因為 i 是索引，所以可以用來改到原本的 number
+        }
+        console.log(number)
+
+        
+
     </script>
 </body>
 

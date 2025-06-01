@@ -4,12 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>通貨膨脹</title>
+    <!-- 
+        某國家發生通貨膨脹
+        饅頭第一天 1 元，第二天 2 元，第三天 3 元，以此類推
+        小明他從第一天起，連續買了 10 天的饅頭
+        每天買的饅頭數依序為 1, 8, 3, 4, 5, 6, 7, 2, 9, 10
+        求小明買饅頭花費的總金額
+    -->
 </head>
-
 <body>
     <script>
-        
+        const toes = [1, 8, 3, 4, 5, 6, 7, 2, 9, 10]
+        console.log(toes)
+
+        let totle = 0
+        // console.log(typeof totle)
+        for (const i in toes) {
+            // console.log(i)
+            // console.log(parseInt(i) + 1)
+            // console.log(toes[i])
+            // console.log(toes[i] * parseInt(i) + 1)
+            console.log(`第 ${ parseInt(i) + 1 } 天，花費 ${toes[i] * parseInt(i) + 1} 元`)
+            totle+= toes[i] * parseInt(i) + 1
+        }
+        console.log(totle)
     </script>
 </body>
 

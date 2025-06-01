@@ -4,11 +4,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>銷售</title>
+    <!-- 
+    作業來源：
+    https://rogeraabbccdd.github.io/F2E-book/basic/array-object.html#%E7%B6%9C%E5%90%88%E7%B7%B4%E7%BF%92
+    
+    假設某一公司有五種產品 A、B、C、D、E
+    其單價分別為 12、16、10、14、15 元
+    而該公司共有三位銷售員，他們在某個月份的銷售量如下所示
+
+                產品 A	產品 B	產品 C	產品 D	產品 E
+    銷售員 1	33	    32	    56	    45	    33
+    銷售員 2	77	    33	    68	    45	    23
+    銷售員 3	43	    55	    43	    67	    65
+
+    - 請將上表的內容設定成二維陣列，並依序完成下列各題
+    - 每一個銷售員的銷售總金額
+    - 每一項產品的銷售總金額
+    -->
 </head>
 
 <body>
     <script>
+        const prices = [ 12, 16, 10, 14, 15]
+            // console.log(prices[0]) //12
+
+        const data = [
+            [33, 32, 56, 45, 33],
+            [77, 33, 68, 45, 23],
+            [43, 55, 43, 67, 65]
+        ]
+        // for (const i in personTotle) {
+            //     console.log (personTotle[i])
+            // }
+        
+        const personOne = data[0]
+            // console.log(personOne[0])
+            // console.log(personOne[0] * prices[0])
+        const personTwo = data[1]
+        const personThree = data[2]
+
+        for (const j in personOne) {
+            // console.log (personOne[j])
+            
+            // console.log (personTotle)
+        }
+        
+        for (const i in prices) {
+                console.log (prices[i])
+                const personTotle = prices[i] * personOne[j]
+            }
+        
+        
+        // for (const i in prices) {
+
+        // }
+        // const productTotle = [0, 0, 0, 0, 0]
+
+        //[33, 32, 56, 45, 33]
+        // console.log(data[1])
+        // console.log(data[2])
+        
+
+
+        
+        
+
+
+
+
+
+
+
+
+
+
 
     </script>
 </body>

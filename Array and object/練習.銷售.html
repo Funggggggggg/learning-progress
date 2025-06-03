@@ -34,37 +34,78 @@
             [77, 33, 68, 45, 23],
             [43, 55, 43, 67, 65]
         ]
-        // for (const i in personTotle) {
-            //     console.log (personTotle[i])
-            // }
-        
-        const personOne = data[0]
-            // console.log(personOne[0])
-            // console.log(personOne[0] * prices[0])
-        const personTwo = data[1]
-        const personThree = data[2]
+// -------------------------------------------------------------------------------------------
+        // const personOne = []
+        let personOneTotle = 0
+        let personTwoTotle = 0
+        let personThreeTotle = 0
 
-        for (const j in personOne) {
-            // console.log (personOne[j])
+        for (const i in data[0]) {
+            // console.log (data[0][i])
+            const personOne = data[0][i] * prices[i]
+            const personTwo = data[1][i] * prices[i]
+            const personThree = data[2][i] * prices[i]
+            // console.log (personOne)
+            // console.log (`銷售員 1 的第 ${parseInt(i) + 1} 項產品銷售總金額為 ${personOne} 元`)
+            // console.log (`銷售員 2 的第 ${parseInt(i) + 1} 項產品銷售總金額為 ${personTwo} 元`)
+            // console.log (`銷售員 3 的第 ${parseInt(i) + 1} 項產品銷售總金額為 ${personThree} 元`)
             
-            // console.log (personTotle)
+            personOneTotle += personOne
+            personTwoTotle += personTwo
+            personThreeTotle += personThree
         }
+        // console.log (`銷售員 1 的銷售總金額為 ${personOneTotle} 元`)
+        // console.log (`銷售員 2 的銷售總金額為 ${personTwoTotle} 元`)
+        // console.log (`銷售員 3 的銷售總金額為 ${personThreeTotle} 元`)
         
-        for (const i in prices) {
-                console.log (prices[i])
-                const personTotle = prices[i] * personOne[j]
+// -------------------------------------------------------------------------------------------
+        let oneTotle = 0
+        let twoTotle = 0
+        let threeTotle = 0
+
+        let productOneTotle = 0
+        let productTwoTotle = 0
+        let productThreeTotle = 0
+        let productFourTotle = 0
+        let productFiveTotle = 0
+
+        for (const i in data) {
+            for ( const j in prices) {
+                // console.log(`銷售員 ${parseInt(i) + 1} 的產品 ${parseInt(j) + 1} 的銷售數量是 ${data[i][j]} 個，總銷售金額是 ${data[i][j] * prices[j]}。`)
+                if (parseInt(i) == 0) {
+                    oneTotle += data[i][j] * prices[j]
+                } else if (parseInt(i) == 1) {
+                    twoTotle += data[i][j] * prices[j]
+                } else if (parseInt(i) == 2) {
+                    threeTotle += data[i][j] * prices[j]
+                }
+
+                if (parseInt(j) == 0) {
+                    productOneTotle += data[i][j] * prices[j]
+                } else if (parseInt(j) == 1) {
+                    productTwoTotle += data[i][j] * prices[j]
+                } else if (parseInt(j) == 2) {
+                    productThreeTotle += data[i][j] * prices[j]
+                } else if (parseInt(j) == 3) {
+                    productFourTotle += data[i][j] * prices[j]
+                } else if (parseInt(j) == 4) {
+                    productFiveTotle += data[i][j] * prices[j]
+                }
             }
-        
-        
-        // for (const i in prices) {
+        }
+        console.log (`銷售員 1 的銷售總金額為 ${oneTotle} 元`)
+        console.log (`銷售員 2 的銷售總金額為 ${twoTotle} 元`)
+        console.log (`銷售員 3 的銷售總金額為 ${threeTotle} 元`)
 
-        // }
-        // const productTotle = [0, 0, 0, 0, 0]
-
-        //[33, 32, 56, 45, 33]
-        // console.log(data[1])
-        // console.log(data[2])
+        console.log (`產品 A 的銷售總金額為 ${productOneTotle} 元`)
+        console.log (`產品 B 的銷售總金額為 ${productTwoTotle} 元`)
+        console.log (`產品 C 的銷售總金額為 ${productThreeTotle} 元`)
+        console.log (`產品 D 的銷售總金額為 ${productFourTotle} 元`)
+        console.log (`產品 E 的銷售總金額為 ${productFiveTotle} 元`)
         
+        // console.log(`${data[1][0]}`)
+        // console.log(`${data[2][0]}`)
+// -------------------------------------------------------------------------------------------
 
 
         

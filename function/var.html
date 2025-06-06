@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>var</title>
+</head>
+
+<body>
+    <script>
+        // var 是以 function 為區域的區域變數
+        // var 的作用域是「函式作用域」
+        // 也就是在 function 內宣告的 var，要在該 function 才有作用
+        // 會以該 function 範圍為界線，在 function 外面的區域就無法取用了！
+        // var 有一個大大的缺點，
+        // 也就是在一些區塊語句（if、else、 for、 while等）裡面用 var 宣告的變數，會洩漏到全域中的！
+        // let跟const的共同特性：
+        //     同個區塊上不能重複命名
+        //     區塊內宣告，都不會洩漏到全域
+        
+        var a = 1
+        a = 100
+        var a = 2
+        console.log(a)    //2
+        // 可以重複宣告，新的會蓋掉舊的
+
+        var b = 1
+        function f() {
+            var b = 2
+            console.log('in', b)
+        }
+        f()
+        console.log('out', b)
+    </script>
+
+
+</body>
+
+</html>

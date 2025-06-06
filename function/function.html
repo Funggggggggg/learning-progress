@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 設定動作名稱
+        //function GoodMorning() {
+        //    document.write('早上好，現在我有冰淇淋')
+        //}
+
+        // const GoodMorning = function () {
+        //    document.write('早上好，現在我有冰淇淋')}
+
+        // 要透過呼叫才能出來，不然不會執行
+        //GoodMorning()
+
+        //function GoodMorning(time, item) {
+        //    document.write(`${time}好，現在我有${item}`)
+        //}
+        //GoodMorning('早上', '冰淇淋')
+        //document.write('<br>')
+        //GoodMorning('中午', '桂格超大便當')
+        //document.write('<br>')
+        //GoodMorning('晚上')
+
+        // = 是預設值！會自動帶入。
+        //function GoodMorning(time = '早上', item = '冰淇淋') {
+        //    console.log(arguments)
+        //    document.write(`${time}好，現在我有${item}`)
+        //}
+        //GoodMorning('早上', '冰淇淋')
+        //document.write('<br>')
+        //GoodMorning('中午')
+        //document.write('<br>')
+        //GoodMorning(undefined, '雞排', '珍奶')
+
+        //function GoodMorning(time = '早上', item = '冰淇淋') {
+        //    return `${time} 好，現在我有${item}`
+        //    // return 已將東西丟出去，所以下面123沒有作用
+        //    // 執行過程中只能使用一個 return
+        //    console.log(123)
+        //}
+        //// 這句要由內往外看
+        //console.log(GoodMorning('中午'))
+        //const text = GoodMorning()
+        //document.write(`<h1>${text}</h1>`)
+
+        //const GoodMorning = (time = '早上', item = '冰淇淋') => {
+        //    return `${time} 好，現在我有${item}`
+        //}
+        //const text = GoodMorning()
+        //document.write(`<h1>${text}</h1>`)
+
+        // 箭頭參數剛好一個，且沒有預設值時，不用 ( )
+        const isEven = number => {
+            //if (number % 2 === 0) return true
+            //else return false
+            return number % 2 === 0
+        }
+        console.log(isEven(1))
+        console.log(isEven(2))
+
+        // 剛好只有一行 return 時不需要{}
+        const isOdd = number => number % 2 === 1
+        console.log(isOdd(1))
+        console.log(isOdd(2))
+
+        // 如果簡寫時 return 的是物件，要用 () 包
+        const obj1 = () => {
+            return { a: 1, b: 2 }
+        }
+        console.log(obj1())
+
+        const obj2 = () => ({ a: 1, b: 2 })
+        console.log(obj2())
+
+        const obj3 = () => ({ a: 1, b: 2})
+        console.log(obj3())
+    </script>
+</body>
+
+</html>

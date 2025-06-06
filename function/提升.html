@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>提升</title>
+</head>
+
+<body>
+    <script>
+        // var 可以先使用再宣告，但是宣告前是 undefined
+        // 執行時會把變數宣告「提升」到使用前
+        console.log(test)   // undefined ❌
+        var test
+        test = 111
+
+        // 不會有錯，因為 text 會綁到 window 內 ✅
+        test = 111
+        console.log(test)
+
+        // function declaretion(宣告) 會提升 => 會把宣告往上拉 ✅
+        hi('AAA')
+        function h1(name) {
+            console.log('hi' + name)
+        }
+
+        // function expression 會依照 var let const 表現
+        // hi2('BBB') => 當下會是 undefined ❌
+        console.log(hi2)  // => 當下會是 undefined ❌
+        var hi2 = function () {
+            console.log('hi ' + name)
+        }
+    </script>
+
+</body>
+
+</html>

@@ -4,9 +4,10 @@
 Conceptual learning - study notes, thought process, error records.
 
 ---
+
 ##  🗂 專案進度 × 技術補強整合表
 
-在已具備基本 HTML/CSS 語法情況下增進基礎，<br>
+在已具備基本 HTML/CSS 語法情況下增進基礎，
 目前已知自己較不熟 flexbox、 bootstrapt 、RWD、css 動畫、 gsap 以及套件的使用，<br>
 故依照專案進度做任務主軸，並安排對應的 CSS 技術補強重點，希望能更有效率地完成專案重構並補足基礎。<br>
 
@@ -29,28 +30,30 @@ Conceptual learning - study notes, thought process, error records.
 
 #### Flexbox 練習挑戰（可做筆記 + 中等實作）
 
--  切出一頁「卡片清單頁」（含 2 欄卡片、卡片 info 左右對齊）
--  練習 `flex-direction: column` + `justify-content: space-between`
--  練習一個按鈕區塊對齊右下角（flex + auto margin）
+- 切出一頁「卡片清單頁」（含 2 欄卡片、卡片 info 左右對齊）
+- 練習 `flex-direction: column` + `justify-content: space-between`
+- 練習一個按鈕區塊對齊右下角（flex + auto margin）
 
 #### GSAP 基礎挑戰（動畫模組）
 
--  製作一個「登入動畫」：從下滑入、背景淡入
--  練習滑鼠 hover：圖片放大 + 陰影浮現
--  GSAP timeline 練習：圖片 → 標題 → 按鈕 順序浮現
+- 製作一個「登入動畫」：從下滑入、背景淡入
+- 練習滑鼠 hover：圖片放大 + 陰影浮現
+- GSAP timeline 練習：圖片 → 標題 → 按鈕 順序浮現
 
 #### Bootstrap & 套件挑戰
 
--  使用 Bootstrap 做一頁響應式留言表單（含輸入驗證）
--  Swiper 做一頁「精選卡片輪播」
--  用 SweetAlert 替換 alert / confirm（美化訊息）
+- 使用 Bootstrap 做一頁響應式留言表單（含輸入驗證）
+- Swiper 做一頁「精選卡片輪播」
+- 用 SweetAlert 替換 alert / confirm（美化訊息）
 
 ---
+
 ## 🗓 3 個月 JavaScript 前端基礎複習計畫表
 
 預計兩個月後要開始去找前端工作，但基礎觀念弱到不行，所以請 chatGPT 幫我結合泰山職訓局 Kento 桑的教學筆記，生出一個系統化釐清 JavaScript 基礎觀念、強化實作能力的讀書計畫。
 
 ---
+
 | 主題  | 週 | 學習重點 | 可能困難點／觀念釐清   | 實作練習建議  |
 | -------------------------- | -------- | -------------------------------------------------------------------------- | -------------------------------------------------------------------- | ---------------------------------------- |
 | **JavaScript 基礎語法**    |1 | - `var`, `let`, `const`<br> - 資料型別與運算子                              | - 型別轉換與自動轉型<br>- 作用域 (Scope) 觀念                  | - 計算器<br>- 型別轉換小工具             |
@@ -75,6 +78,7 @@ Conceptual learning - study notes, thought process, error records.
 希望 3 個月的時間可以補足前端基礎，挑戰成功。
 
 ### 第一週：JavaScript 基礎語法與邏輯
+
 - [ ] 變數宣告（var / let / const）
 - [ ] 資料型別（string, number, boolean, null, undefined, object）
 - [ ] 運算子（+ - * / % ++ -- += 等）
@@ -84,6 +88,7 @@ Conceptual learning - study notes, thought process, error records.
 - [ ] break / continue 的使用
 
 ### 第二週：陣列與物件操作
+
 - [ ] 陣列基本操作（push, pop, shift, unshift）
 - [ ] 陣列方法（map, filter, forEach, find, reduce）
 - [ ] 物件宣告與存取
@@ -91,6 +96,7 @@ Conceptual learning - study notes, thought process, error records.
 - [ ] 陣列與物件的深/淺拷貝
 
 ### 第三週：函式與作用域
+
 - [ ] 函式宣告與函式表達式
 - [ ] 參數與預設值、rest parameter
 - [ ] return 語法
@@ -100,12 +106,14 @@ Conceptual learning - study notes, thought process, error records.
 - [ ] this 的指向（特別是箭頭函式）
 
 ### 第四週：資料處理與計時器
+
 - [ ] 字串處理（split, join, replace, slice）
 - [ ] 陣列資料處理應用
 - [ ] 數字處理與格式化
 - [ ] 計時器：setTimeout / setInterval
 
 ### 第五週： DOM 與事件操作
+
 - [ ] DOM 元素選取（querySelector, getElementById）
 - [ ] 操作屬性與內容（innerText, innerHTML, value）
 - [ ] class 操作（classList.add/remove/toggle）
@@ -115,12 +123,14 @@ Conceptual learning - study notes, thought process, error records.
 - [ ] 防止預設行為（preventDefault）
 
 ### 第六週： jQuery 基礎應用
+
 - [ ] jQuery 選取器與語法
 - [ ] 鏈式操作與動畫（fade, slide, animate）
 - [ ] jQuery 事件處理
 - [ ] 小遊戲應用（翻牌記憶 / 打殭屍）
 
 ### 第七週： ES6+ 語法與模組化
+
 - [ ] 解構賦值（Destructuring）
 - [ ] 展開運算子（Spread / Rest）
 - [ ] 模板字串（Template literals）
@@ -128,18 +138,21 @@ Conceptual learning - study notes, thought process, error records.
 - [ ] 模組化（import / export）
 
 ### 第八週： 非同步與 HTTP 請求
+
 - [ ] Fetch API 基礎
 - [ ] Promise 基本使用
 - [ ] async / await 的應用
 - [ ] 錯誤處理與 try/catch
 
 ### 第九週： Node.js 基礎與應用
+
 - [ ] 認識 Node.js 與後端環境差異
 - [ ] 模組化（require / import）
 - [ ] 簡易伺服器應用
 - [ ] 使用 Node 實作小型 API 或機器人（如 LINE 機器人）
 
 ### 第十週： Vue.js 框架開發
+
 - [ ] Vue 基礎語法（v-bind, v-model, v-if, v-for）
 - [ ] 組件化與 props 傳值
 - [ ] 單一檔案元件（SFC）
@@ -149,12 +162,14 @@ Conceptual learning - study notes, thought process, error records.
 - [ ] Vue 專案整合後端資料
 
 ### 第十一週： MongoDB 與 API 資料整合
+
 - [ ] 安裝與啟用 MongoDB
 - [ ] MongoDB 的基本操作（CRUD）
 - [ ] 建立資料模型與 API 串接
 - [ ] 整合前後端專案（如記帳、留言板）
 
 ### 第十二週： 其他工具與應用
+
 - [ ] Git 基礎操作（clone, commit, push, pull）
 - [ ] VuePress 建立靜態網站
 - [ ] Pug 樣板語法簡介

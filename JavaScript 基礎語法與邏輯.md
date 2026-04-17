@@ -1,10 +1,12 @@
 ---
-title: 第一週：JavaScript 基礎語法與邏輯
-tags: #javascript, #筆記, #語法
-
+title: JavaScript 基礎語法與邏輯
+tags: 
+  - javascript
+  - 筆記
+  - 語法
 ---
 
-# 第一週：JavaScript 基礎語法與邏輯
+# JavaScript 基礎語法與邏輯
 
 ## 變數宣告（var / let / const）
 
